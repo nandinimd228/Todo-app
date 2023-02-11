@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CatPhotoApp</title>
+</head>
+<body>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster" rel="stylesheet" type="text/css">
+    <style>
+        #cat-photo-form {
+            background-color: green;
+        }
+
+        .silver-background {
+            background-color: silver;
+        }
+        .thick-green-border {
+            border-color: green;
+            border-width: 10px;
+            border-style:solid;
+            border-radius: 50%;
+        }
+        .smaller-image {width: 100px;}
+        .red-text {color: red;}
+        p {font-size: 30px;
+        font-family: monospace;}
+        h2 {
+            font-family: Lobster, 'Open Sans';
+        }
+    </style>
+    <h2 class="red-text" id="heading">Cat Photography app</h2>
+    <main>
+        <h3> Photos </h3>
+        <p class="red-text"> Click here to view more
+            <a href="https://catphotos.com" target="_blank">Cat Photos</a>
+        </p>
+        <img src="https://fcc.im/fcc-relaxing-cat" alt="A cute orange cat lying on its back">
+        <h3>Cat Lists</h3>
+        <div class="lists silver-background">
+            <p> Things cats love</p>
+            <ul>
+                <li>Cat nip</li>
+                <li>Milk</li>
+                <li>Chicken</li>
+                <li>Fish</li>
+            </ul>
+            <img src="fish.webp" alt="Fish image" class="smaller-image thick-green-border">
+            <p>Things cat hate</p>
+            <ol>
+                <li>Flea treatment</li>
+                <li>Thunder</li>
+                <li>Other cats</li>
+            </ol>
+        </div>
+        <img src="cats.jpg" alt="Cute cats image">
+        <form action="/submit-cat-photo" id="cat-photo-form">
+            <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" checked> Indoor </label> <br>
+            <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor </label> <br>
+
+            <label for="loving"><input id="loving" type="checkbox" name="personality"> Loving </label> <br>
+            <label for="lazy"><input id="lazy" type="checkbox" name="personality"> Lazy </label> <br>
+            <label for="energetic"><input id="energetic" type="checkbox" name="personality"> Energetic </label> <br>
+
+            <input type="text" placeholder="Cat image URL" required> <br>
+            <button type="Submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p> No copyright</p>
+    </footer>
+</body>
+
+</html>
